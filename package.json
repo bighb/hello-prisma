@@ -1,0 +1,34 @@
+{
+  "name": "hello-prisma",
+  "version": "1.0.0",
+  "description": "A simple Prisma ORM example project with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts" 
+  },
+  "keywords": [
+    "prisma",
+    "typescript",
+    "orm",
+    "database",
+    "mysql"
+  ],
+  "author": "bighb",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "prisma": "^6.12.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "6.12.0"
+  }
+}
